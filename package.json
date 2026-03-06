@@ -1,0 +1,10 @@
+{
+  "name": "leadreply",
+  "version": "1.0.0",
+  "description": "AI lead follow-up tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
