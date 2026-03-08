@@ -1,14 +1,11 @@
-// index.js - LeadReply entry point
-console.log("LeadReply server starting...");
+const http = require('http');
 
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('LeadReply API is running - AI lead follow-up tool');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('LeadReply API running - AI lead follow-up tool');
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+server.listen(port, () => {
+  console.log(`Listening on port ${port}`);
 });
